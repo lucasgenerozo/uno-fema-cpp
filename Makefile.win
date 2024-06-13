@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o cartas/Carta.o cartas/CartaNormal.o
-LINKOBJ  = main.o cartas/Carta.o cartas/CartaNormal.o
+OBJ      = main.o cartas/CartaNormal.o Baralho.o cartas/CartaAcao.o
+LINKOBJ  = main.o cartas/CartaNormal.o Baralho.o cartas/CartaAcao.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -27,8 +27,11 @@ $(BIN): $(OBJ)
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-cartas/Carta.o: cartas/Carta.cpp
-	$(CPP) -c cartas/Carta.cpp -o cartas/Carta.o $(CXXFLAGS)
-
 cartas/CartaNormal.o: cartas/CartaNormal.cpp
 	$(CPP) -c cartas/CartaNormal.cpp -o cartas/CartaNormal.o $(CXXFLAGS)
+
+Baralho.o: Baralho.cpp
+	$(CPP) -c Baralho.cpp -o Baralho.o $(CXXFLAGS)
+
+cartas/CartaAcao.o: cartas/CartaAcao.cpp
+	$(CPP) -c cartas/CartaAcao.cpp -o cartas/CartaAcao.o $(CXXFLAGS)

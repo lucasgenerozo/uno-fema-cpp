@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstring>
 
+#include "Baralho.h"
+
 using namespace std;
 
 int main () {
@@ -32,7 +34,7 @@ int main () {
 	
 	cout << endl << "======= PUXANDO AS CARTAS =======" << endl << endl;
 	
-	Baralho baralhoUno(cartasNormal, cartasAcao, cartasCuringa, jogadores, cartasPorjogador);
+	Baralho baralhoUno(cartasNormal, cartasAcao, cartasCuringa, jogadores, cartasPorJogador);
 		
 	for (int i = 1; i <= jogadores; i++) {
 		cout << "\tJogador " << i << endl;

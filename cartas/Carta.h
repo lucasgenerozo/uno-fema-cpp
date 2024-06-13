@@ -1,7 +1,9 @@
 #ifndef CARTA_H
 #define CARTA_H
 
-#include <cstring>
+#include <string>
+
+using namespace std;
 
 class Carta
 {
@@ -9,8 +11,8 @@ class Carta
 		string nome;
 		string acao;
 	public:
-		virtual void executarAcao();
+		virtual void executarAcao() = 0;
 		
-}
+};
 
 #endif

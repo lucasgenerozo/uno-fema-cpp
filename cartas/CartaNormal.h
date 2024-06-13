@@ -8,7 +8,7 @@ class CartaNormal : public Carta {
 	public:
 		void executarAcao() override;
 		
-		CartaNormal(string nome, string acao);
+		CartaNormal();
 };
 
 #endif
