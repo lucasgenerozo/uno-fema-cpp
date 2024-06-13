@@ -11,7 +11,7 @@ void Baralho::gerarCartasAcao(int qtd) {
 }
 
 void Baralho::gerarCartasCuringas(int qtd) {
-	for (int i = 0; i < qtd; i++) this->cartas.push_back(new CartaNormal());
+	for (int i = 0; i < qtd; i++) this->cartas.push_back(new CartaCuringa());
 }
 
 void Baralho::puxarCarta() {

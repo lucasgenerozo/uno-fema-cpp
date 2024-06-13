@@ -37,7 +37,7 @@ int main () {
 	Baralho baralhoUno(cartasNormal, cartasAcao, cartasCuringa, jogadores, cartasPorJogador);
 		
 	for (int i = 1; i <= jogadores; i++) {
-		cout << "\tJogador " << i << endl;
+		cout << "\n\tJogador " << i << endl;
 		for (int j = 1; j <= cartasPorJogador; j++ ) {
 			baralhoUno.puxarCarta();
 		}

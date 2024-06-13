@@ -5,6 +5,7 @@
 #include "cartas/Carta.h"
 #include "cartas/CartaNormal.h"
 #include "cartas/CartaAcao.h"
+#include "cartas/CartaCuringa.h"
 
 class Baralho
 {
